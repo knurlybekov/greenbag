@@ -77,8 +77,15 @@ WSGI_APPLICATION = 'djangoProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'mssql',
+        'PORT': '1433',
+        'NAME': 'greenbagdb',
+        'USER': 'admingreenbag',
+        'PASSWORD': 'Qwerty123',
+        'HOST': 'greenbagserver.database.windows.net',
+        'OPTIONS': {
+                'driver': 'ODBC Driver 17 for SQL Server',
+            },
     }
 }
 
@@ -111,7 +118,7 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
