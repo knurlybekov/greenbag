@@ -77,15 +77,12 @@ WSGI_APPLICATION = 'djangoProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'mssql',
-        'PORT': '1433',
-        'NAME': 'greenbagdb',
-        'USER': 'admingreenbag',
+        'ENGINE': 'django.db.backends.postgresql',
+        'PORT': '5432',
+        'NAME': 'greenbagdatabase',
+        'USER': 'postgres',
         'PASSWORD': 'Qwerty123',
-        'HOST': 'greenbagserver.database.windows.net',
-        'OPTIONS': {
-                'driver': 'ODBC Driver 17 for SQL Server',
-            },
+        'HOST': 'greenbagdatabase.ct6auoiaqm8j.us-east-2.rds.amazonaws.com',
     }
 }
 

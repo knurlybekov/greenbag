@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:sqlserver://greenbagserver.database.windows.net:1433</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="greenbagdatabase@greenbagdatabase.ct6auoiaqm8j.us-east-2.rds.amazonaws.com" uuid="e5a864fe-fce8-4fa8-af5a-dd1fe89a9ebc">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://greenbagdatabase.ct6auoiaqm8j.us-east-2.rds.amazonaws.com:5432/greenbagdatabase</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
